@@ -20,6 +20,23 @@ Run Autograder
 ```
 There will be prompt for asking password for sudo permission.
 
+The expeted workspace structure is:
+```
+your_lab3_workspace/
+└── src/
+   └── vn_driver/                    # Package name must be vn_driver
+       ├── vn_driver/                # Python package directory
+       │   └── driver.py             # Driver implementation
+       ├── msg/                      # Message directory (can be any name)
+       │   └── *.msg                 # Message file (any name ending in .msg)
+       ├── launch/                   # Launch directory
+       │   └── launch.py           # Launch file (any name with 'launch')
+       ├── CMakeLists.txt
+       └── package.xml
+
+```
+
+
 NOTE: by running this code, the autograder will delete your buil, install and log folder under your workspace.
 
 If you want to delete the folder that autograder created, please use
